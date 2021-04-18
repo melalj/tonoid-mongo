@@ -1,0 +1,33 @@
+{
+  "name": "@tonoid/mongo",
+  "version": "0.0.1",
+  "description": "MongoDB plugin for @tonoid/helpers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/melalj/tonoid-mongo.git"
+  },
+  "keywords": [
+    "mongodb",
+    "helper",
+    "mongo",
+    "microservice"
+  ],
+  "author": "Simo Elalj <simo@tonoid.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melalj/tonoid-mongo/issues"
+  },
+  "homepage": "https://github.com/melalj/tonoid-mongo",
+  "devDependencies": {
+    "eslint": "7.24.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1"
+  },
+  "dependencies": {
+    "mongodb": "3.6.6"
+  }
+}
