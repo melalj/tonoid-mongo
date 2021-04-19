@@ -1,9 +1,7 @@
 # @tonoid/mongo
 
-[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://github.com/melalj/tonoid-mongo)
-[![GitHub stars](https://img.shields.io/github/stars/melalj/tonoid-mongo.svg?style=social&label=Star&maxAge=2592003)]()
-
-[![npm](https://img.shields.io/npm/dt/@tonoid/mongo.svg)]() [![npm](https://img.shields.io/npm/v/@tonoid/mongo.svg)]() [![npm](https://img.shields.io/npm/l/@tonoid/mongo.svg)]() [![David](https://img.shields.io/david/melalj/tonoid-mongo.svg)]()
+![npm](https://img.shields.io/npm/dt/@tonoid/mongo.svg) ![npm](https://img.shields.io/npm/v/@tonoid/mongo.svg) ![npm](https://img.shields.io/npm/l/@tonoid/mongo.svg) ![David](https://img.shields.io/david/melalj/tonoid-mongo.svg)
+[![GitHub stars](https://img.shields.io/github/stars/melalj/tonoid-mongo.svg?style=social&label=Star&maxAge=2592003)](https://github.com/melalj/tonoid-mongo)
 
 MongoDB plugin for [@tonoid/helpers](https://github.com/melalj/tonoid-helpers)
 
