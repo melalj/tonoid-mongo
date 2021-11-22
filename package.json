@@ -1,6 +1,6 @@
 {
   "name": "@tonoid/mongo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MongoDB plugin for @tonoid/helpers",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,6 @@
     "eslint-plugin-import": "2.25.3"
   },
   "dependencies": {
-    "mongodb": "4.1.4"
+    "mongodb": "4.2.0"
   }
 }
