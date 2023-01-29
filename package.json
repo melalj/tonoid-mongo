@@ -1,6 +1,6 @@
 {
   "name": "@tonoid/mongo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MongoDB plugin for @tonoid/helpers",
   "main": "index.js",
   "scripts": {
@@ -23,11 +23,11 @@
   },
   "homepage": "https://github.com/melalj/tonoid-mongo",
   "devDependencies": {
-    "eslint": "8.2.0",
+    "eslint": "8.33.0",
     "eslint-config-airbnb-base": "15.0.0",
-    "eslint-plugin-import": "2.25.3"
+    "eslint-plugin-import": "2.27.5"
   },
   "dependencies": {
-    "mongodb": "4.2.0"
+    "mongodb": "4.13.0"
   }
 }
