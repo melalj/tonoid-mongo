@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 
-module.exports = (customOptions) => ({
-  name: 'mongo',
+module.exports = (customOptions = {}, ctxName = 'mongo') => ({
+  name: ctxName,
   init: async () => {
     const defaultConfig = {
       ...(process.env.MONGO_URL
@@ -16,7 +16,7 @@ module.exports = (customOptions) => ({
       ),
     };
 
-    const options = customOptions || defaultConfig;
+    const options = { ...customOptions, ...defaultConfig };
 
     const mongoUrl = (options.url)
       ? options.url
@@ -30,7 +30,7 @@ module.exports = (customOptions) => ({
     const close = () => mongoClient.close();
 
     return {
-      name: 'mongo',
+      name: ctxName,
       close,
       db,
     };

@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/melalj/tonoid-mongo.svg?style=social&label=Star&maxAge=2592003)](https://github.com/melalj/tonoid-mongo)
 
 MongoDB plugin for [@tonoid/helpers](https://github.com/melalj/tonoid-helpers).
-This plugin uses the [NodeJS MongoDb client 4](https://github.com/mongodb/node-mongodb-native).
+This plugin uses the [NodeJS MongoDb client 5](https://github.com/mongodb/node-mongodb-native).
 
 ## Init options
 
@@ -28,10 +28,10 @@ const mongo = require('@tonoid/mongo');
 
 (async () => {
   await init([
-    mongo(),
+    mongo({ url: 'mongodb://mongo:mongo@localhost:27017' }, 'myMongo'),
   ]);
 
-  const mongoDb = context.mongo.db();
+  const mongoDb = context.myMongo.db();
   const products = await mongoDb.collection('products').find({});
   console.log(products);
 })();
