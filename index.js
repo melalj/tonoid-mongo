@@ -16,7 +16,7 @@ module.exports = (customOptions = {}, ctxName = 'mongo') => ({
       ),
     };
 
-    const options = { ...customOptions, ...defaultConfig };
+    const options = { ...defaultConfig, ...customOptions };
 
     const mongoUrl = (options.url)
       ? options.url
