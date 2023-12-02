@@ -9,7 +9,7 @@ module.exports = (
     password = process.env.MONGO_PASSWORD || 'mongo',
     authDb = process.env.MONGO_AUTH_DB || 'admin',
     dbName = process.env.MONGO_DB || process.env.MONGO_DBNAME || 'test',
-    compression = false,
+    compressors = null,
     extendMongoClientOptions = {},
   },
   ctxName = 'mongo',
@@ -18,8 +18,8 @@ module.exports = (
   init: async () => {
     const mongoClientOptions = {};
 
-    if (compression) {
-      mongoClientOptions.compressors = ['zstd'];
+    if (compressors) {
+      mongoClientOptions.compressors = compressors;
     }
 
     const mongoUrl = url || `mongodb://${username}:${password}@${host}:${port}/${authDb || ''}`;

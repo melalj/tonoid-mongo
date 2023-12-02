@@ -15,7 +15,7 @@ This plugin uses the [NodeJS MongoDb client 6](https://www.npmjs.com/package/mon
 - `password`: (defaults: `process.env.MONGO_PASSWORD || 'mongo'`) MongoDB password.
 - `authDb`: (defaults: `process.env.MONGO_AUTH_DB || 'admin'`) MongoDB authentification database.
 - `dbName`: (defaults: `process.env.MONGO_DB || 'test'`) MongoDB database.
-- `compression`: (defaults: `false`) Allow network compression zstd
+- `compressors`: (defaults: `null`) Allow network compression: zlib, snappy, zstd (install correct dependency)
 
 ## Exported context attributes
 
